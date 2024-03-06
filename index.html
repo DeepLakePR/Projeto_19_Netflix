@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/c092b4e18e.js" crossorigin="anonymous"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Netflix Progetto</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            
+            <div class="header-left">
+
+                <a href=""><img src="images/logo_netflix.png" /></a>
+
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Adicionados Recentemente</a></li>
+                        <li><a href="#">Minha Lista</a></li>
+                    </ul>
+                </nav>
+
+            </div> <!-- Header Left -->
+
+            <div class="header-right">
+
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                </div> <!-- Search -->
+
+                <a href="">INFANTIL</a>
+
+                <i class="fa fa-gift"></i>
+
+                <div class="header-notifications">
+                    <div class="h_circle-notifications">
+                        <span>7</span>
+                    </div> <!-- Header Circle Notification -->
+
+                    <i class="fa fa-bell"></i>
+                </div> <!-- Header Notifications -->
+
+            </div> <!-- Header Right -->
+
+            <div class="clear"></div>
+
+        </div> <!-- Container -->
+    </header> <!-- Header -->
+
+    <section class="highlights">
+
+        <video autoplay muted loop class="highlights-video">
+            <source src="images/arrow.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="overlay"></div> <!-- Overlay -->
+
+        <div class="highlights-text">
+
+            <h2>Lorem Ipsum</h2>
+            <h3>Commodo do irure exercitation minim in laborum.</h3>
+            <p>Dolore quis elit cillum esse velit qui excepteur do minim. Ea culpa nisi aliquip mollit dolore officia mollit elit cillum. </p>
+
+            <br />
+
+            <a href=""><i class="fa fa-play"></i> Assistir</a>
+            <a href=""><i class="fa fa-plus"></i> Minha Lista</a>
+            <a href=""><i class="fa fa-info"></i> Mais Informações</a>
+
+        </div> <!-- Highlights Text -->
+    </section> <!-- Hightlights -->
+
+    <section class="highlights-swiper">
+        <div class="highlights-swiper-flex">
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/arrow.jpg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/suits.jpeg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/arrow.jpg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/suits.jpeg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/arrow.jpg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/suits.jpeg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/arrow.jpg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/suits.jpeg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/arrow.jpg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/suits.jpeg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/arrow.jpg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="highlights-swiper-single-banner">
+                <div style="background-image: url('images/suits.jpeg')" class="highlights-swiper-wraper"></div>
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+    </section> <!-- Hightlights Swiper -->
+
+
+
+    <!-- Scripts -->
+    <script src="jquery.js"></script>
+    <script src="slick.min.js"></script>
+
+    <script>
+
+        $('.highlights-swiper-flex').slick({
+            dots: false,
+            arrows: false,
+            infinite: false,
+            centerMode: false,
+            speed: 1000,
+            slidesToShow: 6,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }
+            ]
+        })
+
+        $('.highlights-swiper-wraper').hover(function(e){
+            $(e.target).css('z-index', '1000');
+        })
+
+        $('.highlights-swiper-wraper').mouseout(function(e){
+            $(e.target).css('z-index', '0');
+        })
+
+    </script>
+
+</body>
+</html>

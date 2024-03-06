@@ -1,0 +1,214 @@
+/* Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Helvetica";
+}
+
+body{
+	background: black;
+	overflow-x: hidden;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+/* Header */
+header{
+	background: black;
+	padding: 12px 0;
+}
+
+/* Header > Left */
+.header-left{
+	float: left;
+}
+
+.header-left img{
+	max-width: 120px;
+}
+
+nav.nav-desktop{
+	position: relative;
+	top: -10px;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+nav.nav-desktop li{
+	margin: 0 10px;
+	display: inline-block;
+}
+
+nav.nav-desktop a{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+/* Header > Right */
+.header-right{
+	margin-top: 12px;
+	float: right;
+}
+
+.header-right .search, .header-right .header-notifications{
+	display: inline-block;
+}
+
+.header-right i{
+	margin: 0 10px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}
+
+.header-right a{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.header-right .header-notifications{
+	position: relative;
+}
+
+.header-notifications .h_circle-notifications{
+	position: absolute;
+	top: -10px;
+	right: -5px;
+	width: 20px;
+	height: 20px;
+	border-radius: 12px;
+	background: #e50914;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: 10px;
+}
+
+.h_circle-notifications span{
+	font-size: 13px;
+}
+
+/* Section Hightlights */
+section.highlights{
+	background-image: url('../images/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 450px;
+	position: relative;
+	z-index: 1;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+section.highlights .overlay{
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.highlights-video{
+	z-index: 1;
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.highlights-text{
+	z-index: 3;
+	color: white;
+	position: relative;
+	padding-top: 80px;
+	margin-left: 4%;
+}
+
+.highlights-text h2{
+	color: #b10f17;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.highlights-text h3{
+	margin: 20px 0;
+	font-size: 30px;
+}
+
+.highlights-text p{
+	font-size: 25px;
+}
+
+.highlights-text a{
+	background-color: rgba(59, 59, 59, 0.4);
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 40px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	font-size: 18px;
+	transition: all 0.25s ease-in-out;
+}
+
+.highlights-text a:hover{
+	color: black;
+	background-color: white;
+}
+
+/* Highlights Swiper */
+section.highlights-swiper .highlights-swiper-flex{
+	width: 95%;
+	margin-left: 5%;
+	position: relative;
+	z-index: 4;
+}
+
+.highlights-swiper-single-banner{
+	width: 100%;
+	padding-top: calc(16.6% / 2);
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+.highlights-swiper-wraper{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.highlights-swiper-single-banner:hover{
+	transition: 1s;
+	transform: scale(1.2, 1.2);
+}
+
+@media screen and (max-width: 768px){
+
+	nav.nav-desktop{
+		display: none;
+	}
+
+}
